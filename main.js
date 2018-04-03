@@ -89,7 +89,7 @@ axios.get("http://pokeapi.co/api/v2/pokemon/159/")
 })
 
 // retrieve data from hosted person-3 json file
-axios.get("http://pokeapi.co/api/v2/pokemon/558/")
+axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crustle.json#")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")
