@@ -59,7 +59,7 @@ axios.get("http://pokeapi.co/api/v2/pokemon/169/")
 })
 
 // retrieve data from hosted person-2 json file
-axios.get("http://pokeapi.co/api/v2/pokemon/159/")
+axios.get("https://github.com/tonymacas/pokedex/blob/master/croconaw.json")
 .then((response) => {
   // creates new li element
   let li = document.createElement("li")
