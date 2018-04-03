@@ -1,1 +1,47 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+h1, h2 {
+    padding-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 35% 40%;
+}
+
+
+.grid div:nth-child(even) {
+    background-color:white;
+}
+
+.grid div:nth-child(odd) {
+    background-color:#4fc3f7;
+}
+
+.trainer {
+    padding: 10px 0 0 30px;
+    position: absolute;
+    animation-name: run;
+    animation-direction: normal;
+animation-duration: 5s;
+}
+
+@keyframes run{
+    from {transform: translateY(600px)}
+    to{transform: translateY(50px)}
+}
+
+.corbat, .croconaw, .crustle {
+    position:relative;
+    animation-name: scary;
+    animation-direction: reverse;
+    animation-duration: 3s;
+    animation-delay: 7s;
+}
+@keyframes scary{
+    from {transform: translateX(600px)}
+    to{transform: translateX(100px)}
+}
 
