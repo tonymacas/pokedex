@@ -2,46 +2,108 @@
     margin: 0%;
     padding: 0%;
 }
-h1, h2 {
-    padding-left: 15px;
+
+.logo>img {
+    overflow: hidden;
+    display: inline;
+    text-align: center;
+    width: 30%;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 30% 35% 40%;
+.navbar {
+    background-color:red;
+    box-shadow:2px 2px 2px black;
 }
 
-
-.grid div:nth-child(even) {
-    background-color:white;
+.logo {
+    box-shadow:8px 8px 8px black;
+    position: relative;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
 
-.grid div:nth-child(odd) {
-    background-color:#4fc3f7;
+.poke-image {
+    width: 150px;;
+    position: absolute;
+    padding-top: 120px;
+    left: 70px;
+}
+
+.poke-info {
+    font-size: 118%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: tomato;
+    position: relative;
+    left: 100px;
+    top: 110px;
+}
+
+.poke-info {
+    position: absolute;
+    padding-top: 220px;
+}
+
+#crobat {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+}
+
+#croconaw {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    display: none;
+}
+
+#crustle {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    display: none;
+}
+
+#card {
+    padding-bottom: 50px;
+    opacity: 1;
+    display: block;
+    padding-left: 10px;
+}
+
+#card>img {
+    width: 400px;
+    height: 600px;
 }
 
 .trainer {
-    padding: 10px 0 0 30px;
-    position: absolute;
-    animation-name: run;
-    animation-direction: normal;
-animation-duration: 5s;
+    padding-top: 20px;
+    width: 320px;
 }
 
-@keyframes run{
-    from {transform: translateY(600px)}
-    to{transform: translateY(50px)}
+#firstball {
+    margin: 0 auto;
+    width: 20%;
 }
 
-.corbat, .croconaw, .crustle {
-    position:relative;
-    animation-name: scary;
-    animation-direction: reverse;
-    animation-duration: 3s;
-    animation-delay: 7s;
-}
-@keyframes scary{
-    from {transform: translateX(600px)}
-    to{transform: translateX(100px)}
+#secondball {
+    margin: 0 auto;
+    width: 20%;
 }
 
+#thirdball {
+    margin: 0 auto;
+    width: 20%;
+}
+
+/*@keyframes roll {
+    from {
+        transform: translateX(2%)
+    }
+    to {
+        transform: translateX(3230%)
+    }
+}*/
+
+.pointer {
+    cursor: pointer;
+}

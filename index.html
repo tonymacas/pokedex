@@ -1,73 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link type="text/css" css/materialize.min.css"  media="screen,projection"/> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
   <link rel="stylesheet" href="main.css">
-  <title>Pokedex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+  <div class="row navbar">
+    <div class="col s12 logo">
+       <img  src="pokemon/logo.png">
+  </div>
+</div>
+  <div class="container">
 
-  <h1>My Pokedex</h1>
-  <h2>Tony's World</h2>
+    <div class="row page1">
 
-  <div class="grid">
+      <div class="col l8 m12">
+        <div id="pokemon">
 
-    <div id="trainer">
-      <section class="trainer">
-        <img src="pokemon/trainer.png" width=80% height=80%>
-      </section>
-    </div>
+          <section id="crobat">
+            <img class="poke-image" src="pokemon/crobat.gif">
+            <div class="poke-info">
+              <p class="name1"></p>
+              <p class="hp1"></p>
+              <p class="attack1"></p>
+              <p class="defense1"></p>
+              <p class="abi1-1"></p>
+              <p class="abi1-2"></p>
+            </div>
+          </section>
 
-    <div id="card">
-      <img src="pokemon/card.png" width=100% height="=160%">
-    </div>
+          <section id="croconaw">
+            <img class="poke-image" src="pokemon/croconaw.gif">
+            <div class="poke-info">
+              <p class="name2"></p>
+              <p class="hp2"></p>
+              <p class="attack2"></p>
+              <p class="defense2"></p>
+              <p class="abi2-1"></p>
+              <p class="abi2-2"></p>
+            </div>
+          </section>
 
-    <div id="pokemon">
-      <section id="crobat">
-        <img src="pokemon/crobat.gif" width=60% height=60%>
-        <p class="name"></p>
-        <p class="hp"></p>
-        <p class="attack"></p>
-        <p class="defense"></p>
-        <p class="abi1"></p>
-        <p class="abi2"></p>
-      </section>
+          <section id="crustle">
+            <img class="poke-image" src="pokemon/crustle.gif">
+            <div class="poke-info">
+              <p class="name3"></p>
+              <p class="hp3"></p>
+              <p class="attack3"></p>
+              <p class="defense3"></p>
+              <p class="abi3-1"></p>
+              <p class="abi3-2"></p>
+              <p class="abi3-3"></p>
+            </div>
+          </section>
 
-      <section id="croconaw">
-        <img src="pokemon/croconaw.png" width=35% height=35%>
-        <p class="name"></p>
-        <p class="hp"></p>
-        <p class="attack"></p>
-        <p class="defense"></p>
-        <p class="abi1"></p>
-        <p class="abi2"></p>
-        <p class="abi3"></p>
-        <p class="abi4"></p>
-      </section>
+          <section id="card">
+            <img src="pokemon/card2.png">
+          </section>
+        </div>
+      </div>
 
-      <section id="crustle">
-        <img src="pokemon/crustle.png" width=40% height=40%>
-        <p class="name"></p>
-        <p class="hp"></p>
-        <p class="attack"></p>
-        <p class="defense"></p>
-        <p class="abi1"></p>
-        <p class="abi2"></p>
-        <p class="abi3"></p>
-        <p class="abi4"></p>
-      </section>
+      <div class="col l4 m12 background2">
+        <img class="trainer" src="pokemon/trainer2.png">
+      </div>
+
     </div>
 
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <div class="row">
+    <div class="col s4 center-align">
+      <img id="firstball" src="pokemon/pokeball1.png">
+    </div>
+    <div class="col s4 center-align">
+      <img id="secondball" src="pokemon/pokeball2.png">
+    </div>
+    <div class="col s4 center-align">
+      <img id="thirdball" src="pokemon/pokeball3.png">
+    </div>
+  </div>
+  </div>
 
-  <script src="main.js"></script>  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
