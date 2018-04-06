@@ -2,6 +2,7 @@
 let pokeAll = [];
 
 
+//making variables to capture and fill info im getting
 let displayedPokemon = document.querySelector(".poke-image");
 let pokeName = document.querySelector(".name1");
 let pokeHp1 = document.querySelector(".hp1");
@@ -43,11 +44,12 @@ class Pokemon {
 }
 
 //let crobat;
-// retrieve data from hosted person-1 json file
+// retrieve data from hosted pokemon-1 api
 axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crobat.json")
   .then((response) => {
-    // creates new li element
+    // creates new li element(this is where i will fill my info from the API)
     let data = response.data
+    
     let section = document.querySelector("#crobat")
     let name = document.querySelector(".name1")
     let hp = document.querySelector(".hp1")
@@ -57,6 +59,7 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crobat.jso
     let ability2 = document.querySelector(".abi1-2")
 
 
+    //making the new pokemon and position the info I took from Pokemon API
     crobat = new Pokemon(
       data.name,
       data.stats[5].base_stat,
@@ -68,10 +71,12 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crobat.jso
 
     pokeAll.push(crobat);
 
+
+    //using the info and displaying it in the HTML file 
     name.innerHTML = data.name;
     hp.innerHTML = "HP: " + data.stats[5].base_stat;
-    attack.innerHTML = "ATTK:" + " " + data.stats[4].base_stat
-    defense.innerHTML = "DFNS: " + data.stats[3].base_stat
+    attack.innerHTML = "Attk:" + " " + data.stats[4].base_stat
+    defense.innerHTML = "Def: " + data.stats[3].base_stat
     ability1.innerHTML = data.abilities[0].ability.name
     ability2.innerHTML = data.abilities[1].ability.name
 
@@ -83,7 +88,7 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crobat.jso
       changePokemon(index)
     });
     crobatTarget.classList.add("pointer");
-  
+
   }).catch((error) => {
     console.log(error)
   })
@@ -128,7 +133,7 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/croconaw.j
     defense.innerHTML = "DFNS: " + data.stats[3].base_stat
     ability1.innerHTML = data.abilities[0].ability.name
     ability2.innerHTML = data.abilities[1].ability.name
-  
+
 
     //counter to keep track of pokemon in array, instead of random
     let index = pokeAll.length - 1;
@@ -205,7 +210,7 @@ function changePokemon(number) {
 
 
 
-
+//this is the function for image click to show pokemon i tried before 
 // function changePoke2() {
 //   let pokeImage = document.querySelector(".poke-image")
 //   if (pokeAll[0].name === "croconaw") {

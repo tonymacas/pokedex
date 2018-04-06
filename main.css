@@ -11,19 +11,20 @@
 }
 
 .navbar {
-    background-color:red;
-    box-shadow:2px 2px 2px black;
+    background-color: red;
+    box-shadow: 2px 2px 2px black;
 }
 
 .logo {
-    box-shadow:8px 8px 8px black;
+    box-shadow: 8px 8px 8px black;
     position: relative;
     text-align: center;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 15px 0;
 }
 
 .poke-image {
-    width: 150px;;
+    width: 150px;
+    ;
     position: absolute;
     padding-top: 120px;
     left: 70px;
@@ -78,8 +79,15 @@
 .trainer {
     padding-top: 20px;
     width: 320px;
+    animation-name: show-up;
+    animation-direction: normal;
+    animation-duration: 2s;
 }
 
+.tony {
+    font-family: "Arial Narrow";
+    font-size: 40px;
+}
 #firstball {
     margin: 0 auto;
     width: 20%;
@@ -95,14 +103,14 @@
     width: 20%;
 }
 
-/*@keyframes roll {
+@keyframes show-up {
     from {
-        transform: translateX(2%)
+        transform: translateX(600px)
     }
     to {
-        transform: translateX(3230%)
+        transform: translateX(500px)
     }
-}*/
+}
 
 .pointer {
     cursor: pointer;
