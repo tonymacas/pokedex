@@ -15,7 +15,7 @@ let crobatTarget = document.querySelector("#firstball");
 let croconawTarget = document.querySelector("#secondball");
 let crustleTarget = document.querySelector('#thirdball');
 
-console.log(displayedPokemon);
+
 
 // container class
 class Tony {
@@ -210,51 +210,3 @@ function changePokemon(number) {
 
 
 
-//this is the function for image click to show pokemon i tried before 
-// function changePoke2() {
-//   let pokeImage = document.querySelector(".poke-image")
-//   if (pokeAll[0].name === "croconaw") {
-//   pokeImage.src = "pokemon/croconaw.gif";
-//   } else if (pokeAll[0].name === "crobat") {
-//     pokeImage.src = "pokemon/crobat.gif";
-//   } else {
-//     pokeImage.src = "pokemon/crustle.gif";
-//   }
-//   let pokeName = document.querySelector(".name1");
-//   pokeName.innerHTML = pokeAll[0].name;
-//   let pokeHp1 = document.querySelector(".hp1");
-//   pokeHp1.innerHTML = pokeAll[0].hp;
-//   let pokeAttack1 = document.querySelector(".attack1")
-//   pokeAttack1.innerHTML = pokeAll[0].attack;
-//   let pokeDefense1 = document.querySelector(".defense1");
-//   pokeDefense1.innerHTML = pokeAll[0].defense;
-//   let pokeAbi1 = document.querySelector(".abi1-1");
-//   pokeAbi1.innerHTML =pokeAll[0].ability;
-//   let pokeAbi2 = document.querySelector(".abi1-2");
-//   pokeAbi2.innerHTML = pokeAll[0].ability;
-// }
-
-
-// function changePoke1() {
-//   let pokeImage = document.querySelector(".poke-image")
-//   if (pokeAll[0].name === "croconaw") {
-//   pokeImage.src = "pokemon/croconaw.gif";
-//   } else if (pokeAll[0].name === "crobat") {
-//     pokeImage.src = "pokemon/crobat.gif";
-//   } else {
-//     pokeImage.src = "pokemon/crustle.gif";
-//   }
-//   let pokeName = document.querySelector(".name1");
-//   pokeName.innerHTML = pokeAll[0].name;
-//   let hp = document.querySelector(".hp1");
-//   pokeHp1.innerHTML = pokeAll[0].hp;
-//   let pokeAttack1 = document.querySelector(".attack1")
-//   pokeAttack1.innerHTML = pokeAll[0].attack;
-//   let pokeDefense1 = document.querySelector(".defense1");
-//   pokeDefense1.innerHTML = pokeAll[0].defense;
-//   let pokeAbi1 = document.querySelector(".abi1-1");
-//   pokeAbi1.innerHTML =pokeAll[0].ability;
-//   let pokeAbi2 = document.querySelector(".abi1-2");
-//   pokeAbi2.innerHTML = pokeAll[1].ability;
-//   let pokeAbi3
-// }
