@@ -21,7 +21,7 @@ class Tony {
   add(pokeData) {
     this.all.push(pokeData)
   }
-}
+
 
 get(pokemonName) {
     for(let i = 0; i < this.all.length; i++){
