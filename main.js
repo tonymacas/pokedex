@@ -128,7 +128,7 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/croconaw.j
 
 axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crustle.json")
   .then((response) => {
-    // creates new li element
+  
     let data = response.data
     let section = document.querySelector("#crustle")
     let name = document.querySelector(".name3")
@@ -160,14 +160,14 @@ axios.get("https://raw.githubusercontent.com/tonymacas/pokedex/master/crustle.js
     ability3.innerHTML = data.abilities[2].ability.name
 
     let index = pokeAll.length - 1;
-    // add event listener and pointer class inside of axios
+  
     crustleTarget.addEventListener("click", function () {
       changePokemon(index)
     });
     crustleTarget.classList.add("pointer");
-    console.log(index);
+   
   }).catch((error) => {
-    console.log(error)
+  
   })
 
 function changePokemon(number) {
